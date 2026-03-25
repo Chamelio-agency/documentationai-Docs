@@ -1,0 +1,214 @@
+---
+title: "Managing Navigation"
+description: "How to update your website menu, add or remove pages from navigation, reorder menu items, and best practices for keeping your navigation visitor-friendly."
+---
+
+# Managing Navigation
+
+Your website navigation is one of the most important elements on your site. It's the first thing visitors look at to orient themselves, and it determines whether they can easily find what they're looking for.
+
+Updating your navigation in Sanity is straightforward, but there are some important things to keep in mind. Let's walk through it.
+
+## Where to Find Navigation Settings
+
+Navigation is managed in Sanity Studio, but the exact location depends on how your website was set up. It's usually in one of these places:
+
+- **"Navigation"** — A dedicated content type in the sidebar
+- **"Settings"** — Under a general settings document that includes nav, footer, and other site-wide options
+- **"Header"** or **"Menu"** — Sometimes it's labeled more specifically
+
+If you're not sure where to find it, check the sidebar items in Sanity Studio. Look for anything that sounds like settings, navigation, or menu. If you're still stuck, ask on Slack and we'll point you to the right spot.
+
+<Callout kind="info">
+Your navigation might be split into multiple sections: main navigation (the top menu), footer navigation (links at the bottom of every page), and possibly a mobile menu if it differs from the desktop version.
+</Callout>
+
+## Understanding Menu Items
+
+Each item in your navigation has two key pieces:
+
+**Label** — This is the text visitors see in the menu. Keep it short and clear. "About" is better than "About Our Company." "Retreats" is better than "Our Retreat Offerings."
+
+**Link** — This is where the menu item points to. It can be:
+- An internal page on your website (like /about or /retreats)
+- An external URL (like a booking page on another platform)
+- A section anchor (like #testimonials to jump to a section on the same page)
+
+Some setups also allow you to select from existing pages in a dropdown rather than typing a URL manually. This is the safest option because it prevents broken links.
+
+## Adding a New Menu Item
+
+<Steps>
+<Step title="Open navigation in Sanity" icon="menu" title-type="p">
+  Navigate to the Navigation or Settings section in Sanity Studio. You'll see your current menu items listed.
+</Step>
+<Step title="Click add" icon="plus" title-type="p">
+  Look for a "+" button or "Add item" option at the bottom of the menu items list. Click it to create a new menu item.
+</Step>
+<Step title="Fill in the label" icon="type" title-type="p">
+  Enter the text you want visitors to see. Keep it to 1-2 words when possible. Think about what makes sense to someone who has never been to your website before.
+</Step>
+<Step title="Set the link" icon="link" title-type="p">
+  Either select an existing page from the dropdown or enter the URL path. For internal pages, use the relative path (e.g., /about, /retreats, /blog) rather than the full URL.
+</Step>
+<Step title="Position it" icon="move" title-type="p">
+  Drag the new menu item to the position you want it in. Items are displayed left to right (or top to bottom on mobile) in the order they appear in the list.
+</Step>
+<Step title="Publish" icon="check-circle" title-type="p">
+  Click "Publish" to make your navigation changes live. They'll appear on your website within seconds.
+</Step>
+</Steps>
+
+[VIDEO: Korneel shows how to update the main navigation]
+
+## Removing a Menu Item
+
+To remove an item from your navigation, click the trash icon or three-dot menu on the item you want to remove, then confirm the deletion.
+
+<Callout kind="alert">
+Removing a page from navigation doesn't delete the page itself. The page still exists on your website and can be accessed directly via its URL. Navigation removal just hides it from the menu. If you want to actually delete a page, reach out to us on Slack.
+</Callout>
+
+This is actually useful. There might be pages on your website that you don't want in the main menu but still want accessible — like a thank-you page after a form submission, a specific landing page for ads, or an old blog post you've linked to elsewhere.
+
+## Reordering Menu Items
+
+To change the order of your menu items, simply drag and drop them into the desired position. Grab the handle (usually on the left side of each item) and move it up or down.
+
+The order in the list matches the order on your website: the first item appears on the far left (or at the top on mobile), and the last item appears on the far right (or at the bottom on mobile).
+
+## Working with Dropdown Menus
+
+If your website has dropdown (sub-navigation) menus, you can manage child items under parent items.
+
+The structure typically looks like this:
+
+```
+Services (parent — may or may not link to a page)
+├── Yoga Retreats (child)
+├── Coaching Programs (child)
+└── Corporate Wellness (child)
+```
+
+To add a dropdown:
+
+<Steps>
+<Step title="Find the parent item" icon="folder" title-type="p">
+  In your navigation editor, look for the menu item that should have a dropdown. It might already have a "Children" or "Sub-items" field.
+</Step>
+<Step title="Add child items" icon="plus" title-type="p">
+  Click the "+" or "Add" button within the parent item's children section. Add each sub-page with its label and link.
+</Step>
+<Step title="Order the children" icon="move" title-type="p">
+  Drag child items into the order you want them to appear in the dropdown. The first child appears at the top of the dropdown.
+</Step>
+</Steps>
+
+<Callout kind="info">
+Not all website designs support dropdown menus. If you don't see a way to add child items, your site may use a flat navigation structure. If you want to add dropdowns, message us on Slack and we can evaluate whether your design supports it or if adjustments are needed.
+</Callout>
+
+## Footer Navigation
+
+Your footer (the bottom section of every page) usually has its own navigation, separate from the main menu. Footer navigation is managed in the same Settings or Navigation area of Sanity, just in a different section.
+
+Footer navigation can include:
+- Quick links to important pages
+- Legal pages (Privacy Policy, Terms of Service)
+- Social media links
+- Contact information
+- A newsletter signup link
+
+Footer navigation is a good place for pages that visitors might need but don't belong in the main menu — like your privacy policy or terms and conditions.
+
+## Best Practices for Navigation
+
+Here are some proven principles that make your navigation work harder for you.
+
+### Keep It to 5-7 Items
+
+<Callout kind="tip">
+Keep your main navigation to 5-7 items maximum. Research consistently shows that more options lead to decision paralysis — visitors get overwhelmed and leave instead of choosing. If you have more than 7 pages, consider using dropdowns or moving less critical pages to the footer.
+</Callout>
+
+A typical wellness business navigation might look like:
+
+```
+Home | About | Services | Retreats | Blog | Contact
+```
+
+or
+
+```
+Home | About | Programs | Testimonials | Blog | Book a Call
+```
+
+Six items. Clean, clear, and easy to scan.
+
+### Put the Most Important Items First and Last
+
+People tend to notice and remember the first and last items in a list more than the ones in the middle (this is called the serial position effect). Put your most important pages in those spots.
+
+For most wellness businesses:
+- **First position:** Home (this is convention — visitors expect it there)
+- **Last position:** Your primary call to action (Book a Call, Contact, Apply Now)
+
+### Use Action-Oriented Language for CTAs
+
+If you have a call-to-action button in your navigation (and you should), use action language:
+- "Book a Call" (not "Contact")
+- "Start Your Journey" (not "Services")
+- "Join a Retreat" (not "Retreats")
+
+The more specific and active the language, the more clicks you'll get.
+
+### Be Consistent with Language
+
+Use the same terms everywhere. If your navigation says "Programs" but your page heading says "Services," visitors get confused. Pick one term and stick with it across your entire website.
+
+### Test on Mobile
+
+After making navigation changes, always check how it looks on your phone. Mobile navigation is usually a hamburger menu (the three horizontal lines) that opens to show your menu items vertically. Make sure the items are readable and the menu functions properly.
+
+## Common Navigation Scenarios
+
+### "I added a new page and want it in the menu"
+
+1. Go to Navigation/Settings in Sanity
+2. Add a new menu item
+3. Set the label to match your new page
+4. Link it to the new page
+5. Position it where you want
+6. Publish
+
+### "I want to change the order of my menu items"
+
+1. Go to Navigation/Settings in Sanity
+2. Drag and drop items into the new order
+3. Publish
+
+### "I want to add an external booking link to my menu"
+
+1. Go to Navigation/Settings in Sanity
+2. Add a new menu item
+3. Set the label (e.g., "Book Now")
+4. For the link, enter the full external URL (e.g., https://booking.yourplatform.com)
+5. Some setups let you mark external links to open in a new tab — enable this if available
+6. Publish
+
+### "I want to hide a page temporarily"
+
+1. Go to Navigation/Settings in Sanity
+2. Remove the menu item for that page (remember, this doesn't delete the page)
+3. Publish
+4. When you're ready to show it again, add the menu item back
+
+<Callout kind="tip">
+If you're doing a major navigation restructure (adding multiple pages, changing the hierarchy, renaming sections), consider sketching it out on paper or in a note first. Then make all the changes in one session and publish once. This avoids visitors seeing a half-updated menu.
+</Callout>
+
+## Next Steps
+
+<Card title="Editing Page Content" href="/website-management/editing-page-content" icon="edit" horizontal="false">
+  Now that your navigation is set up, learn how to edit the content on your pages.
+</Card>

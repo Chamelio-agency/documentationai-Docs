@@ -1,5 +1,5 @@
 {
-  "name": "Starter Kit",
+  "name": "TransformWebsites Help Center",
   "colors": {
     "light": {
       "brand": "#F97316"
@@ -11,141 +11,411 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
-        "icon": "book",
+        "tab": "Help Center",
+        "icon": "home",
         "groups": [
           {
-            "group": "Start Here",
+            "group": "Getting Started",
             "icon": "rocket",
             "pages": [
               {
-                "title": "Introduction",
-                "path": "introduction",
+                "title": "Welcome",
+                "path": "getting-started/welcome",
                 "icon": "home"
               },
               {
-                "title": "Quickstart",
-                "path": "quickstart",
-                "icon": "zap"
+                "title": "How We Work Together",
+                "path": "getting-started/how-we-work",
+                "icon": "users"
               },
               {
-                "title": "Components",
-                "path": "components",
-                "icon": "code"
+                "title": "Your Website Overview",
+                "path": "getting-started/your-website-overview",
+                "icon": "globe"
               }
             ]
           },
           {
-            "group": "Components",
-            "icon": "layers",
+            "group": "Website Management",
+            "icon": "edit",
             "pages": [
               {
-                "title": "Images",
-                "path": "components/images",
+                "title": "Logging Into Sanity",
+                "path": "website-management/logging-into-sanity",
+                "icon": "log-in"
+              },
+              {
+                "title": "Editing Page Content",
+                "path": "website-management/editing-page-content",
+                "icon": "pencil"
+              },
+              {
+                "title": "Adding Blog Posts",
+                "path": "website-management/adding-blog-posts",
+                "icon": "file-text"
+              },
+              {
+                "title": "Updating Images",
+                "path": "website-management/updating-images",
                 "icon": "image"
               },
               {
-                "title": "Cards",
-                "path": "components/cards",
-                "icon": "square"
+                "title": "Managing Navigation",
+                "path": "website-management/managing-navigation",
+                "icon": "menu"
               },
               {
-                "title": "Code",
-                "path": "components/code",
-                "icon": "code"
+                "title": "Understanding Your Domain",
+                "path": "website-management/understanding-your-domain",
+                "icon": "link"
               },
               {
-                "title": "Callouts",
-                "path": "components/callouts",
-                "icon": "message-square"
+                "title": "Website Performance",
+                "path": "website-management/website-performance",
+                "icon": "activity"
+              }
+            ]
+          },
+          {
+            "group": "Hosting & Care Plan",
+            "icon": "server",
+            "pages": [
+              {
+                "title": "Hosting Plan",
+                "path": "hosting-care-plan/hosting-plan",
+                "icon": "cloud"
               },
               {
-                "title": "Steps",
-                "path": "components/steps",
+                "title": "Care Plan",
+                "path": "hosting-care-plan/care-plan",
+                "icon": "heart"
+              },
+              {
+                "title": "Monthly Reports",
+                "path": "hosting-care-plan/monthly-reports",
+                "icon": "bar-chart"
+              },
+              {
+                "title": "Requesting Changes",
+                "path": "hosting-care-plan/requesting-changes",
+                "icon": "message-circle"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Growth Tools",
+        "icon": "trending-up",
+        "groups": [
+          {
+            "group": "Social Planner",
+            "icon": "share-2",
+            "pages": [
+              {
+                "title": "Social Planner Overview",
+                "path": "growth-tools/social-planner/overview",
+                "icon": "share-2"
+              },
+              {
+                "title": "Connecting Social Accounts",
+                "path": "growth-tools/social-planner/connecting-accounts",
+                "icon": "link"
+              },
+              {
+                "title": "Creating a Post",
+                "path": "growth-tools/social-planner/creating-a-post",
+                "icon": "plus-circle"
+              },
+              {
+                "title": "Using the Content Calendar",
+                "path": "growth-tools/social-planner/content-calendar",
+                "icon": "calendar"
+              },
+              {
+                "title": "Best Practices",
+                "path": "growth-tools/social-planner/best-practices",
+                "icon": "star"
+              }
+            ]
+          },
+          {
+            "group": "Forms & Surveys",
+            "icon": "clipboard",
+            "pages": [
+              {
+                "title": "Forms Overview",
+                "path": "growth-tools/forms-surveys/overview",
+                "icon": "clipboard"
+              },
+              {
+                "title": "Creating a Form",
+                "path": "growth-tools/forms-surveys/creating-a-form",
+                "icon": "plus-circle"
+              },
+              {
+                "title": "Creating a Survey",
+                "path": "growth-tools/forms-surveys/creating-a-survey",
                 "icon": "list-ordered"
               },
               {
-                "title": "Tabs",
-                "path": "components/tabs",
-                "icon": "columns"
+                "title": "Creating a Quiz",
+                "path": "growth-tools/forms-surveys/creating-a-quiz",
+                "icon": "help-circle"
+              },
+              {
+                "title": "Embedding Forms",
+                "path": "growth-tools/forms-surveys/embedding-forms",
+                "icon": "code"
+              },
+              {
+                "title": "Viewing Submissions",
+                "path": "growth-tools/forms-surveys/viewing-submissions",
+                "icon": "inbox"
+              }
+            ]
+          },
+          {
+            "group": "Payments",
+            "icon": "credit-card",
+            "pages": [
+              {
+                "title": "Payments Dashboard",
+                "path": "growth-tools/payments/dashboard",
+                "icon": "credit-card"
+              },
+              {
+                "title": "Products, Payment Links & Coupons",
+                "path": "growth-tools/payments/products-and-links",
+                "icon": "tag"
+              },
+              {
+                "title": "Payment Settings & Integrations",
+                "path": "growth-tools/payments/settings",
+                "icon": "settings"
+              }
+            ]
+          },
+          {
+            "group": "Automations & Workflows",
+            "icon": "zap",
+            "pages": [
+              {
+                "title": "Automations Overview",
+                "path": "growth-tools/automations/overview",
+                "icon": "zap"
+              },
+              {
+                "title": "Understanding Your Workflows",
+                "path": "growth-tools/automations/understanding-workflows",
+                "icon": "git-branch"
+              },
+              {
+                "title": "Common Automations",
+                "path": "growth-tools/automations/common-automations",
+                "icon": "repeat"
+              }
+            ]
+          },
+          {
+            "group": "Pipeline & CRM",
+            "icon": "filter",
+            "pages": [
+              {
+                "title": "Pipeline Overview",
+                "path": "growth-tools/pipeline-crm/overview",
+                "icon": "filter"
+              },
+              {
+                "title": "Managing Contacts",
+                "path": "growth-tools/pipeline-crm/managing-contacts",
+                "icon": "users"
+              },
+              {
+                "title": "Tracking Leads",
+                "path": "growth-tools/pipeline-crm/tracking-leads",
+                "icon": "target"
+              }
+            ]
+          },
+          {
+            "group": "Reviews & Reputation",
+            "icon": "star",
+            "pages": [
+              {
+                "title": "Reviews Overview",
+                "path": "growth-tools/reviews/overview",
+                "icon": "star"
+              },
+              {
+                "title": "Setting Up Review Requests",
+                "path": "growth-tools/reviews/setting-up-requests",
+                "icon": "send"
+              },
+              {
+                "title": "Managing Reviews",
+                "path": "growth-tools/reviews/managing-reviews",
+                "icon": "message-circle"
+              }
+            ]
+          },
+          {
+            "group": "Email Marketing",
+            "icon": "mail",
+            "pages": [
+              {
+                "title": "Email Overview",
+                "path": "growth-tools/email-marketing/overview",
+                "icon": "mail"
+              },
+              {
+                "title": "Creating a Campaign",
+                "path": "growth-tools/email-marketing/creating-a-campaign",
+                "icon": "send"
+              },
+              {
+                "title": "Managing Your List",
+                "path": "growth-tools/email-marketing/managing-your-list",
+                "icon": "list"
+              },
+              {
+                "title": "Brand Boards",
+                "path": "growth-tools/email-marketing/brand-boards",
+                "icon": "palette"
+              },
+              {
+                "title": "Countdown Timers",
+                "path": "growth-tools/email-marketing/countdown-timers",
+                "icon": "clock"
+              }
+            ]
+          },
+          {
+            "group": "Courses & Memberships",
+            "icon": "graduation-cap",
+            "pages": [
+              {
+                "title": "Creating Courses",
+                "path": "growth-tools/courses/creating-courses",
+                "icon": "book-open"
+              },
+              {
+                "title": "Uploading Lesson Videos & Captions",
+                "path": "growth-tools/courses/uploading-lessons",
+                "icon": "video"
+              },
+              {
+                "title": "Course Offers, Bundles & Upsells",
+                "path": "growth-tools/courses/offers-and-upsells",
+                "icon": "gift"
+              },
+              {
+                "title": "Managing Course Comments",
+                "path": "growth-tools/courses/managing-comments",
+                "icon": "message-circle"
+              },
+              {
+                "title": "Course Analytics",
+                "path": "growth-tools/courses/analytics",
+                "icon": "bar-chart"
+              },
+              {
+                "title": "Course Settings",
+                "path": "growth-tools/courses/settings",
+                "icon": "settings"
+              }
+            ]
+          },
+          {
+            "group": "Calendar & Booking",
+            "icon": "calendar",
+            "pages": [
+              {
+                "title": "Calendar Overview",
+                "path": "growth-tools/calendar-booking/overview",
+                "icon": "calendar"
+              },
+              {
+                "title": "Setting Availability",
+                "path": "growth-tools/calendar-booking/setting-availability",
+                "icon": "clock"
+              },
+              {
+                "title": "Managing Bookings",
+                "path": "growth-tools/calendar-booking/managing-bookings",
+                "icon": "check-circle"
+              }
+            ]
+          },
+          {
+            "group": "Media Storage",
+            "icon": "folder",
+            "pages": [
+              {
+                "title": "Media Storage",
+                "path": "growth-tools/media-storage/overview",
+                "icon": "folder"
+              }
+            ]
+          },
+          {
+            "group": "AI Features",
+            "icon": "cpu",
+            "pages": [
+              {
+                "title": "AI Chatbot Overview",
+                "path": "growth-tools/ai-features/overview",
+                "icon": "message-square"
+              },
+              {
+                "title": "Customizing Your Chatbot",
+                "path": "growth-tools/ai-features/customizing-chatbot",
+                "icon": "settings"
+              },
+              {
+                "title": "Chatbot Conversations",
+                "path": "growth-tools/ai-features/conversations",
+                "icon": "message-circle"
               }
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
-        "icon": "code",
+        "tab": "Analytics & FAQ",
+        "icon": "bar-chart-2",
         "groups": [
           {
-            "group": "Overview",
-            "icon": "file-text",
+            "group": "Analytics & Tracking",
+            "icon": "bar-chart",
             "pages": [
               {
-                "title": "Authentication",
-                "path": "authentication",
-                "icon": "lock"
+                "title": "Analytics Overview",
+                "path": "analytics/overview",
+                "icon": "bar-chart"
+              },
+              {
+                "title": "Google Analytics",
+                "path": "analytics/google-analytics",
+                "icon": "trending-up"
+              },
+              {
+                "title": "Understanding Conversions",
+                "path": "analytics/understanding-conversions",
+                "icon": "target"
               }
             ]
           },
           {
-            "group": "Sample Endpoints",
-            "openapi": "openapi.yaml"
-          }
-        ]
-      },
-      {
-        "tab": "Help Center",
-        "icon": "help-circle",
-        "pages": [
-          {
-            "title": "Help Center",
-            "path": "help-center",
-            "icon": "home"
-          },
-          {
-            "group": "FAQs",
+            "group": "FAQ",
             "icon": "help-circle",
-            "expandable": false,
             "pages": [
               {
-                "title": "Documentation Source",
-                "path": "help-center/faq/getting-started"
+                "title": "Frequently Asked Questions",
+                "path": "faq",
+                "icon": "help-circle"
               }
             ]
-          },
-          {
-            "group": "Troubleshooting",
-            "icon": "alert-triangle",
-            "expandable": false,
-            "pages": [
-              {
-                "title": "Page Missing in Sidebar",
-                "path": "help-center/troubleshooting/install-error"
-              }
-            ]
-          },
-          {
-            "group": "Guides",
-            "icon": "book-open",
-            "expandable": false,
-            "pages": [
-              {
-                "title": "Create Your First Page",
-                "path": "help-center/guides/setup-project"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Changelog",
-        "icon": "clock",
-        "pages": [
-          {
-            "title": "Changelog",
-            "path": "changelog",
-            "icon": "history"
           }
         ]
       }

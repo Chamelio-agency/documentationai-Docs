@@ -1,0 +1,203 @@
+---
+title: "Understanding Your Domain"
+description: "How your domain name and DNS work, what we manage for you, and what to do when you want to make changes — explained in plain language."
+---
+
+# Understanding Your Domain
+
+Your domain name (like yourname.com) is your address on the internet. It's how people find you and how Google identifies your website. Behind the scenes, there's a system called DNS that connects your domain to your actual website.
+
+You don't need to become a DNS expert. But understanding the basics can help you feel more confident, especially if you ever want to make changes or connect new services.
+
+## How Your Domain Connects to Your Website
+
+Here's the simplified version of what happens when someone types your domain into their browser:
+
+<Steps>
+<Step title="Visitor types your domain" icon="type" title-type="p">
+  Someone opens their browser and goes to yourname.com.
+</Step>
+<Step title="DNS looks up the address" icon="search" title-type="p">
+  The Domain Name System (DNS) is like the internet's phone book. It looks up your domain and finds the address of the server where your website lives — in your case, Vercel's servers.
+</Step>
+<Step title="Vercel serves your website" icon="globe" title-type="p">
+  Vercel receives the request and delivers your beautifully fast website to the visitor's browser. All of this happens in milliseconds.
+</Step>
+</Steps>
+
+The "DNS records" are the entries in this phone book that tell the internet where to send visitors when they type your domain. We set these up during your website launch, and they typically don't need to change.
+
+## Who Manages Your Domain?
+
+There are two common scenarios, and it's good to know which one applies to you.
+
+### Scenario 1: You Own Your Domain
+
+If you purchased your domain yourself through a registrar like:
+- GoDaddy
+- Namecheap
+- Google Domains (now Squarespace Domains)
+- Cloudflare
+- TransIP
+- Combell
+
+...then you own and control the domain. During your project, we asked you to update the DNS records to point to Vercel. You (or we, with your login) made those changes, and now your domain routes to your new website.
+
+**What this means for you:**
+- You're responsible for domain renewals (usually annual)
+- You have full control over the domain if you ever want to transfer it
+- If you need DNS changes, we'll guide you through it or ask for temporary access
+
+<Callout kind="tip">
+Make sure auto-renewal is turned on for your domain. If your domain expires, your website goes offline and your email stops working. Most registrars enable auto-renewal by default, but it's worth double-checking. Set a calendar reminder to verify once a year.
+</Callout>
+
+### Scenario 2: We Manage Your Domain
+
+If we purchased and set up your domain as part of your project, we manage it for you. This means:
+
+- We handle all renewals automatically
+- We manage all DNS records
+- You don't need to worry about any of the technical details
+- If you ever want to transfer the domain to your own registrar, just let us know and we'll facilitate the transfer
+
+<Callout kind="info">
+Regardless of who manages the domain, you always own it. A domain is like a piece of property — it belongs to whoever is listed as the registrant. We would never hold your domain hostage. If you want to take it elsewhere, it's yours to take.
+</Callout>
+
+## DNS Records Explained (Simply)
+
+If you're curious about what those DNS records actually are, here's a quick breakdown. You don't need to memorize this — it's just context so you're not in the dark.
+
+### A Record
+Points your domain (yourname.com) to a specific server IP address. This is the main record that connects your domain to Vercel.
+
+### CNAME Record
+Points a subdomain (like www.yourname.com) to another domain. We typically use this to point your www subdomain to Vercel.
+
+### MX Records
+These handle email. If you use Google Workspace, Zoho, or another email provider with your domain, MX records tell the internet where to deliver your emails. These are completely separate from your website.
+
+### TXT Records
+Used for various verification purposes. Google Search Console, email authentication (SPF/DKIM), and other services sometimes require TXT records. We set these up as needed.
+
+<Callout kind="info">
+Your website DNS records and your email DNS records are separate things. Changing your website hosting doesn't affect your email, and vice versa. They live in the same DNS settings but do different jobs.
+</Callout>
+
+## Common Scenarios and What to Do
+
+Here are the situations that come up most often, and what you should do for each one.
+
+### "I want to change my domain name"
+
+Maybe you're rebranding, or you found a better domain. Here's what to do:
+
+1. Purchase your new domain through your preferred registrar
+2. Message Korneel on Slack with the new domain name
+3. We'll set up the DNS records for the new domain
+4. We'll configure Vercel to serve your website on the new domain
+5. We'll set up a redirect from your old domain to the new one so you don't lose any SEO value or break existing links
+
+The whole process usually takes 1-2 business days once you have the new domain purchased.
+
+<Callout kind="alert">
+If your current domain has been live for a while and ranks in Google, changing domains is a significant decision. You won't lose all your SEO if we set up proper redirects, but there's usually a temporary dip in rankings. Talk to us before making the switch so we can plan it properly.
+</Callout>
+
+### "I want to add a subdomain"
+
+A subdomain is something like blog.yourname.com or shop.yourname.com. Common uses include:
+
+- A separate blog platform
+- An online store
+- A booking system
+- A community platform
+- A course or membership site
+
+To add a subdomain, message us on Slack. We'll need to know:
+- What subdomain you want (e.g., courses.yourname.com)
+- Where it should point (the service or platform you want to connect)
+
+We'll set up the DNS record and make sure everything works. This is usually a quick task.
+
+### "I want to connect a new email service"
+
+If you're setting up Google Workspace, Zoho Mail, or another email service with your domain (to get you@yourname.com), there might be MX records to update.
+
+Let us know on Slack what email service you're setting up, and we'll either:
+- Guide you through the DNS changes if you manage your own domain
+- Make the changes for you if we manage your domain
+
+### "I want to transfer my domain to a different registrar"
+
+Sometimes you want to move your domain from GoDaddy to Namecheap, or from us to your own account. That's totally fine.
+
+Domain transfers typically involve:
+1. Unlocking the domain at the current registrar
+2. Getting an authorization code (EPP code)
+3. Initiating the transfer at the new registrar
+4. Confirming the transfer via email
+
+The process takes 5-7 days. Your website stays online throughout — DNS records carry over during the transfer.
+
+### "My domain is about to expire"
+
+If you get an email from your registrar saying your domain is about to expire:
+1. Don't panic — most registrars give you a grace period after expiration
+2. Log into your registrar and renew the domain
+3. Turn on auto-renewal to prevent this from happening again
+
+If your domain does expire and you can't renew it:
+- Contact your registrar's support immediately
+- Most registrars have a redemption period (usually 30-40 days after expiration) where you can still recover it, though there may be extra fees
+
+<Callout kind="alert">
+An expired domain can be picked up by anyone. Domain squatters actively look for expired domains, especially ones with good SEO. Protect yourself by enabling auto-renewal and keeping your registrar payment information up to date.
+</Callout>
+
+## SSL Certificates (The Padlock Icon)
+
+You might have noticed the little padlock icon in your browser's address bar when you visit your website. That's your SSL certificate in action.
+
+SSL encrypts the connection between your visitor's browser and your website, protecting any data that's transmitted. It's also a Google ranking factor — sites without SSL get penalized in search results.
+
+<Callout kind="info">
+Your SSL certificate is handled automatically by Vercel. It's issued for free, renews automatically, and you never need to think about it. There's no manual renewal, no annual fee, and no risk of it expiring unexpectedly. One less thing to worry about.
+</Callout>
+
+## What You Should Never Do
+
+We want to be upfront about this to prevent any accidental issues.
+
+<Callout kind="alert">
+Never change your DNS records without checking with us first. A wrong DNS change can take your website offline, break your email, or cause other issues that can take hours to resolve (because DNS changes can take time to propagate across the internet). If you think something needs to change, message us on Slack first and we'll either make the change for you or guide you through it safely.
+</Callout>
+
+This isn't about control — it's about preventing headaches. DNS changes propagate across the internet over a period of up to 48 hours. If something goes wrong, it can take that long to fully fix. Better to get it right the first time.
+
+## DNS Propagation: Why Changes Aren't Instant
+
+When DNS records are changed, the update doesn't happen instantly everywhere in the world. This is called "propagation," and it can take anywhere from a few minutes to 48 hours.
+
+During propagation:
+- Some visitors might see the old website while others see the new one
+- Email might be temporarily inconsistent
+- It might look like something is broken even though the change was correct
+
+This is normal and temporary. In practice, most DNS changes propagate within 1-2 hours for the majority of visitors. The 48-hour window is a worst-case scenario.
+
+[VIDEO: Korneel explains DNS in 2 minutes — what the records mean and when to worry]
+
+## Quick Reference
+
+| Scenario | What to do |
+|----------|------------|
+| Change domain | Message us on Slack — we'll handle the technical setup |
+| Add subdomain | Message us on Slack with the subdomain and service details |
+| Connect email service | Message us on Slack — we'll guide you through DNS changes |
+| Transfer domain | Message us on Slack — we'll help facilitate the transfer |
+| Domain expiring | Renew immediately and enable auto-renewal |
+| DNS question | Message us on Slack — don't make changes yourself |
+
+The pattern here is clear: when in doubt, message us on Slack. Domain and DNS issues are quick to fix when done correctly, and slow and painful when done wrong. Let us help.

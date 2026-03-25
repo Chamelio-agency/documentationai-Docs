@@ -1,0 +1,276 @@
+---
+title: Understanding Your Automations
+description: How to view, manage, and understand the automated workflows running in your system — from reading the visual builder to checking who's gone through each automation.
+---
+
+# Understanding Your Automations
+
+Automations are the engine that keeps your business running while you're with clients, running retreats, or simply sleeping. They handle follow-ups, confirmations, reminders, and more — automatically. This guide shows you how to navigate the automations section, understand what's happening, and manage everything with confidence.
+
+<Video
+  src="https://www.loom.com/embed/235ea0cfd00c4751abb022decd5c1c06"
+  title="Walkthrough: Understanding your automations"
+  width="672"
+  height="378"
+  allow-full-screen="true"
+  style="width: 100%; max-width: 672px; height: auto;"
+/>
+
+## Your automation list
+
+Click **Automation** in the sidebar to see all your automations. These are the ones we've set up for you, and each one has a status showing whether it's active (running) or in draft (paused). [Watch this step (0:20)](https://www.loom.com/share/235ea0cfd00c4751abb022decd5c1c06?t=20)
+
+<Image
+  src="https://loom.com/i/6c04c01a028e49c2bb3e31623c2e2cd7?workflows_screenshot=true"
+  alt="The automation list showing all workflows with their names and active/draft status"
+  width="800"
+  height="450"
+/>
+
+Automations are sometimes organised into **folders** to keep things tidy — especially if you have several running at once. [Watch this step (0:37)](https://www.loom.com/share/235ea0cfd00c4751abb022decd5c1c06?t=37)
+
+<Image
+  src="https://loom.com/i/9153e40793db46ebb046d4de99678d18?workflows_screenshot=true"
+  alt="Automation folders helping organise workflows by category"
+  width="800"
+  height="450"
+/>
+
+### What you can do with each automation
+
+Click the **three dots** next to any automation to see your options: [Watch this step (0:48)](https://www.loom.com/share/235ea0cfd00c4751abb022decd5c1c06?t=48)
+
+<Image
+  src="https://loom.com/i/9f1ad4221e0e4cf89a98c9f250496f0b?workflows_screenshot=true"
+  alt="Automation menu showing edit, rename, draft, duplicate, move, and delete options"
+  width="800"
+  height="450"
+/>
+
+- **Edit** — open the automation to see or change what it does
+- **Rename** — give it a clearer name
+- **Draft** — pause the automation (it stops running but isn't deleted)
+- **Move to folder** — organise it
+- **Duplicate** — create a copy (useful for building a similar automation)
+- **Delete** — permanently remove it
+
+<Callout kind="alert">
+  Be careful when pausing ("drafting") or deleting an automation. Any contacts currently in the middle of the automation will stop receiving the remaining steps. If you're unsure, message Korneel on Slack before making changes.
+</Callout>
+
+### Checking performance
+
+You can see statistics for each automation — like how many emails and text messages have been sent through it. [Watch this step (1:17)](https://www.loom.com/share/235ea0cfd00c4751abb022decd5c1c06?t=77)
+
+<Image
+  src="https://loom.com/i/5d63e1f8d11944f9b56a0ea763ad08ac?workflows_screenshot=true"
+  alt="Automation statistics showing email and SMS counts"
+  width="800"
+  height="450"
+/>
+
+### Recovering deleted automations
+
+Accidentally deleted an automation? Don't worry — you can find it in the **Deleted** section and restore it. [Watch this step (1:41)](https://www.loom.com/share/235ea0cfd00c4751abb022decd5c1c06?t=101)
+
+<Image
+  src="https://loom.com/i/0a1f8b0963aa4550a8481e7105ca1552?workflows_screenshot=true"
+  alt="Deleted automations section showing recoverable workflows"
+  width="800"
+  height="450"
+/>
+
+## How automations work inside
+
+Every automation has two main parts: a **trigger** (what starts it) and **actions** (what happens next).
+
+### Triggers — what starts the automation
+
+A trigger is the event that kicks things off. For example: [Watch this step (3:13)](https://www.loom.com/share/235ea0cfd00c4751abb022decd5c1c06?t=193)
+
+<Image
+  src="https://loom.com/i/f858d44a812b4e80a7334363bc6c0eb0?workflows_screenshot=true"
+  alt="Trigger configuration showing the event that starts the automation"
+  width="800"
+  height="450"
+/>
+
+Here are the most common triggers for wellness businesses:
+
+| Trigger | What starts the automation |
+| --- | --- |
+| Form submitted | Someone fills out a form on your website |
+| Appointment booked | Someone books a call or session |
+| Payment received | Someone pays for a product or service |
+| Contact tag added | A tag is added to a contact (manually or automatically) |
+| Contact created | A new contact enters your system |
+| Pipeline stage changed | A lead moves to a new stage in your pipeline |
+
+<Callout kind="info">
+  You can have multiple triggers on the same automation. For example, one automation could start when someone fills out a contact form OR when someone books a discovery call — both feed into the same welcome sequence.
+</Callout>
+
+### Actions — what happens next
+
+After the trigger fires, the automation runs through a sequence of actions. These are the steps it takes automatically. [Watch this step (4:06)](https://www.loom.com/share/235ea0cfd00c4751abb022decd5c1c06?t=246)
+
+<Image
+  src="https://loom.com/i/abc7b393d14a43f5a638eaefe0537810?workflows_screenshot=true"
+  alt="Action steps in the automation builder showing the plus button to add new actions"
+  width="800"
+  height="450"
+/>
+
+Common actions include:
+- **Send an email** — confirmation, welcome message, follow-up
+- **Wait** — pause for a set time (e.g., wait 2 days before the next email)
+- **Add a tag** — label the contact for future segmentation
+- **Move in pipeline** — update which stage the lead is in
+- **Send a notification** — alert you or your team
+- **If/else condition** — take different paths based on what the contact did (e.g., "If they opened the email, send a follow-up. If not, wait 3 more days.")
+
+<Callout kind="tip">
+  The if/else condition is what makes automations truly smart. For example: "If the person booked a call, send a confirmation. If they didn't book within 3 days, send a gentle reminder." Different people get different experiences automatically.
+</Callout>
+
+### The automation builder views
+
+The automation builder has two views. The default is the advanced visual builder (flowchart-style), but you can switch to the **standard builder** (a simpler list view) using the toggle in the top left. Use whichever feels more comfortable.
+
+## Creating a new automation
+
+While we set up most automations for you, you can create your own too. [Watch this step (2:05)](https://www.loom.com/share/235ea0cfd00c4751abb022decd5c1c06?t=125)
+
+<Image
+  src="https://loom.com/i/e4fd3f5159af4dc789a844fa4e52523c?workflows_screenshot=true"
+  alt="Create automation options showing Build Using AI and Create Workflow buttons"
+  width="800"
+  height="450"
+/>
+
+You have two options:
+
+- **Build Using AI** (recommended) — describe what you want in plain language and the AI builds it for you. For example: "When someone fills out my contact form, send them a welcome email, wait 2 days, then send a follow-up."
+- **Create manually** — start from scratch or pick a pre-built recipe (template)
+
+<Callout kind="tip">
+  Pre-built recipes are a great starting point. They cover common scenarios like lead follow-ups, appointment reminders, and welcome sequences. Pick one that's close to what you need and then customise it.
+</Callout>
+
+### Using the AI assistant
+
+The automation builder has a built-in AI you can chat with at any time. [Watch this step (5:11)](https://www.loom.com/share/235ea0cfd00c4751abb022decd5c1c06?t=311)
+
+<Image
+  src="https://loom.com/i/0cf4c21909f04175bc1810d5667b7b95?workflows_screenshot=true"
+  alt="The AI assistant panel in the automation builder where you can ask questions or get help building"
+  width="800"
+  height="450"
+/>
+
+You can:
+- Ask it to explain what a specific step does
+- Ask it to build an entire automation from a description
+- Point at a step and ask "What does this do?"
+- Ask for suggestions on how to improve your automation
+
+## Testing your automation
+
+Before publishing any automation, **always test it first**. [Watch this step (6:05)](https://www.loom.com/share/235ea0cfd00c4751abb022decd5c1c06?t=365)
+
+<Image
+  src="https://loom.com/i/342d577eeec149b09864728e60f68cc6?workflows_screenshot=true"
+  alt="Testing an automation with a test contact"
+  width="800"
+  height="450"
+/>
+
+<Steps>
+  <Step title="Use a test contact" icon="user" title-type="p">
+    Add yourself (or a test contact) to your contacts and trigger the automation with that test person. This way you can see exactly what a real client would experience.
+  </Step>
+  <Step title="Check every step" icon="check-circle" title-type="p">
+    Make sure each email arrives, each wait time works correctly, and each condition routes properly.
+  </Step>
+  <Step title="Publish when ready" icon="rocket" title-type="p">
+    Once you've confirmed everything works, save and publish the automation so it starts running for real contacts.
+  </Step>
+</Steps>
+
+<Callout kind="info">
+  When testing the same automation multiple times with the same contact, make sure "Allow Re-entry" is enabled in the automation settings. Otherwise the system won't let the same person go through it twice, and your test won't work.
+</Callout>
+
+## Seeing who's gone through an automation
+
+The **Enrollment History** tab shows which contacts have entered the automation and where they are in the process. [Watch this step (7:04)](https://www.loom.com/share/235ea0cfd00c4751abb022decd5c1c06?t=424)
+
+<Image
+  src="https://loom.com/i/dd01b4f55b67478cb61142267d11b324?workflows_screenshot=true"
+  alt="Enrollment history showing contacts who have gone through the automation with their current step"
+  width="800"
+  height="450"
+/>
+
+For each contact, you can: [Watch this step (7:24)](https://www.loom.com/share/235ea0cfd00c4751abb022decd5c1c06?t=444)
+
+<Image
+  src="https://loom.com/i/26cb372c85a44087aeef127a7048bcd0?workflows_screenshot=true"
+  alt="Contact actions in enrollment history showing force next step and remove options"
+  width="800"
+  height="450"
+/>
+
+- **See which step they're on** — for example, "waiting for day 3 follow-up"
+- **Force them to the next step** — skip the wait if you need to move things along
+- **Remove them from the automation** — stop the sequence for this person
+
+### Execution logs
+
+For a more detailed view, the **Execution Logs** tab shows every individual action that was taken — every email sent, every tag added, every wait completed. [Watch this step (8:00)](https://www.loom.com/share/235ea0cfd00c4751abb022decd5c1c06?t=480)
+
+<Image
+  src="https://loom.com/i/46767446ea914137be2b4d2d8d75c928?workflows_screenshot=true"
+  alt="Execution logs showing detailed step-by-step actions taken for each contact"
+  width="800"
+  height="450"
+/>
+
+This is more advanced — you generally don't need to check it unless you're troubleshooting why something didn't work as expected.
+
+## Version history
+
+Every time you save changes to an automation, a version is saved. If something goes wrong after an edit, you can always revert to a previous version. Look for **Version History** in the left panel of the automation builder.
+
+## Quick reference
+
+| What you want to do | Where to find it |
+| --- | --- |
+| See all automations | **Automation** in the sidebar |
+| Check if an automation is running | Look at the status (Active = running, Draft = paused) |
+| Pause an automation | Three dots → **Draft** |
+| See who's gone through it | Open automation → **Enrollment History** tab |
+| Skip a wait for someone | Enrollment History → find contact → **Force next step** |
+| Remove someone from an automation | Enrollment History → find contact → red delete icon |
+| Create a new automation | **Create Workflow** or **Build Using AI** (top right) |
+| Get help building | Use the **AI assistant** inside the automation builder |
+| Recover a deleted automation | **Deleted** tab in the automation list |
+
+## What to read next
+
+<Columns cols={2}>
+  <Card title="Common Automations" icon="repeat" href="/growth-tools/automations/common-automations">
+    See examples of the most popular automations for wellness businesses.
+  </Card>
+  <Card title="Managing Your Contacts" icon="users" href="/growth-tools/pipeline-crm/managing-contacts">
+    Learn how contacts flow into your system and through your automations.
+  </Card>
+</Columns>
+
+---
+
+> This feature is part of our **Growth Tools** package. Interested in adding it to your setup? Send Korneel a message on Slack and we'll walk through whether it's a good fit for your business.
+
+---
+
+> **Need help?** If you get stuck, send Korneel a message on Slack and we'll sort it out together.

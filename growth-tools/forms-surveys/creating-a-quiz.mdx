@@ -1,0 +1,254 @@
+---
+title: Creating Quizzes
+description: How to build interactive quizzes that score answers, show personalised results, and generate leads — like "What type of retreat is right for you?"
+---
+
+# Creating Quizzes
+
+Quizzes are the most interactive of the three (forms, surveys, and quizzes). They let you ask questions, calculate a score behind the scenes, and show a personalised result at the end. They're amazing for lead generation — think "What type of retreat is right for you?", "How stressed are you?", or "What's your wellness personality?"
+
+<Video
+  src="https://www.loom.com/embed/5c9e167d3c8c458ca5d2057d68a40585"
+  title="Walkthrough: Creating quizzes"
+  width="672"
+  height="378"
+  allow-full-screen="true"
+  style="width: 100%; max-width: 672px; height: auto;"
+/>
+
+## Forms vs surveys vs quizzes
+
+| | Forms | Surveys | Quizzes |
+| --- | --- | --- | --- |
+| **Pages** | Single page | Multiple pages | Multiple pages |
+| **Scoring** | No | No | Yes — automatic scoring |
+| **Personalised result** | No | No | Yes — based on score |
+| **Best for** | Quick inputs | Longer questionnaires | Interactive lead generation |
+| **Embed in emails** | Yes | No | No |
+
+## How quizzes work
+
+The magic of quizzes is the scoring system. Here's the concept:
+
+1. You create **categories** (like personality types, retreat styles, or stress levels)
+2. Each answer option gives points to one or more categories
+3. At the end, the quiz shows a result based on which category scored highest
+
+For example, a "What type of retreat is right for you?" quiz might have categories like "Adventure", "Relaxation", and "Spiritual". Each question's answers add points to different categories. The person who picks mostly active, outdoor answers gets "Adventure Retreat" as their result.
+
+## The quiz page
+
+Navigate to **Sites → Quizzes** to see your quizzes. You can add new ones, organise them in folders, or edit existing ones. [Watch this step (0:26)](https://www.loom.com/share/5c9e167d3c8c458ca5d2057d68a40585?t=26)
+
+<Image
+  src="https://loom.com/i/5ad6e76897ea490eae20fb0b8b5f84f9?workflows_screenshot=true"
+  alt="The quiz page showing existing quizzes with options to add, search, and organise"
+  width="800"
+  height="450"
+/>
+
+## Building a quiz
+
+Like surveys, quizzes have multiple pages. Each page can contain questions, personal information fields, or customised text blocks for layout. [Watch this step (0:45)](https://www.loom.com/share/5c9e167d3c8c458ca5d2057d68a40585?t=45)
+
+<Image
+  src="https://loom.com/i/cffddb69715841e48c3e3a346efd3bd3?workflows_screenshot=true"
+  alt="Quiz builder showing multiple pages with questions"
+  width="800"
+  height="450"
+/>
+
+### Adding questions
+
+On the left panel, you'll find everything you can add to your quiz: quiz questions, personal information fields (name, email), and text blocks for layout and instructions. [Watch this step (1:11)](https://www.loom.com/share/5c9e167d3c8c458ca5d2057d68a40585?t=71)
+
+<Image
+  src="https://loom.com/i/5d4e42523cf34796b4a9bb70cbb00927?workflows_screenshot=true"
+  alt="Left panel showing quiz question types, personal info fields, and customised text blocks"
+  width="800"
+  height="450"
+/>
+
+<Callout kind="tip">
+  Add a text block at the top of your first page as an introduction: "Answer these 10 quick questions to find out which retreat style suits you best. It takes about 2 minutes." This sets expectations and encourages people to complete the quiz.
+</Callout>
+
+## Setting up scoring categories
+
+This is what makes quizzes powerful. Click **Manage Categories** in the top left to define your result categories. [Watch this step (1:45)](https://www.loom.com/share/5c9e167d3c8c458ca5d2057d68a40585?t=105)
+
+<Image
+  src="https://loom.com/i/8d879132d2134667ad0147beb7a94e27?workflows_screenshot=true"
+  alt="Manage Categories panel showing defined scoring categories like Vata, Pitta, and Kapha"
+  width="800"
+  height="450"
+/>
+
+For example, an Ayurvedic wellness quiz might have three categories: **Vata**, **Pitta**, and **Kapha**. A retreat quiz might use: **Adventure**, **Relaxation**, **Spiritual**. A stress assessment might use: **Low Stress**, **Moderate Stress**, **High Stress**.
+
+### Assigning scores to answers
+
+Click on any question, then go to its settings. At the bottom, you'll see the categories with score fields. [Watch this step (2:07)](https://www.loom.com/share/5c9e167d3c8c458ca5d2057d68a40585?t=127)
+
+<Image
+  src="https://loom.com/i/9f7bb47f5ddc4952bd9043e05a65139d?workflows_screenshot=true"
+  alt="Question settings showing score assignment per category for each answer option"
+  width="800"
+  height="450"
+/>
+
+For each answer option, you assign points to the relevant category. For example:
+
+- Question: "How do you like to start your morning?"
+  - "With a high-energy workout" → Adventure: 2 points
+  - "With meditation and tea" → Spiritual: 2 points
+  - "Sleeping in, no alarm" → Relaxation: 2 points
+
+The system adds up all the points across all questions and determines which category scored highest. That becomes the person's result.
+
+## The result page
+
+Scroll to the bottom of your quiz to find the result page. This is what people see after completing the quiz. [Watch this step (2:58)](https://www.loom.com/share/5c9e167d3c8c458ca5d2057d68a40585?t=178)
+
+<Image
+  src="https://loom.com/i/d9c6ea1864a44fe0a02732d62317e355?workflows_screenshot=true"
+  alt="Result page editor showing header, individual category result, and footer sections"
+  width="800"
+  height="450"
+/>
+
+You can include several sections on your result page:
+
+<ExpandableGroup>
+  <Expandable title="Individual category result" default-open="true">
+    Shows only the winning category — the one where the person scored highest. This is the most common setup. For example: "You're a Relaxation retreater! Here's what that means..." Each category gets its own description and image that you write in advance.
+  </Expandable>
+  <Expandable title="Overall score" default-open="false">
+    Shows the total score across all categories as a single number. Useful for assessments like "Your stress score is 73/100."
+  </Expandable>
+  <Expandable title="Score per category" default-open="false">
+    Shows how the person scored on each category. Useful when you want people to see their full profile — for example, "Vata: 8, Pitta: 5, Kapha: 3."
+  </Expandable>
+  <Expandable title="Header and footer" default-open="false">
+    Add custom text, images, or calls to action above and below the results. Great for adding a "Book your ideal retreat" button or "Share your result" link.
+  </Expandable>
+</ExpandableGroup>
+
+### Configuring score tiers (optional)
+
+If you're showing overall or per-category scores, you can set up colour-coded tiers so results are visually clear. [Watch this step (4:24)](https://www.loom.com/share/5c9e167d3c8c458ca5d2057d68a40585?t=264)
+
+<Image
+  src="https://loom.com/i/4c635f950ad3414ea55a034405bd2902?workflows_screenshot=true"
+  alt="Score tier configuration showing colour codes for low, medium, and high score ranges"
+  width="800"
+  height="450"
+/>
+
+For example:
+- **0-30** = Green ("Low stress — you're doing great!")
+- **31-60** = Yellow ("Moderate stress — some areas to work on")
+- **61-100** = Red ("High stress — let's talk about how to help")
+
+## Storing quiz results on contacts
+
+This is a powerful feature for personalisation. You can save each person's quiz results as a custom field on their contact profile. [Watch this step (5:24)](https://www.loom.com/share/5c9e167d3c8c458ca5d2057d68a40585?t=324)
+
+<Image
+  src="https://loom.com/i/f7de315b91b846bb9a9482e558a449d5?workflows_screenshot=true"
+  alt="Custom field settings for storing quiz scores on the contact profile"
+  width="800"
+  height="450"
+/>
+
+Why this matters: later, when you open a contact's profile, you can instantly see their quiz result. You can also use it in automations — for example, "If quiz result is Adventure, send them the adventure retreat email sequence."
+
+<Steps>
+  <Step title="Go to Settings in the quiz builder" icon="settings" title-type="p">
+    Open the settings panel for your result page.
+  </Step>
+  <Step title="Select which custom fields to store" icon="database" title-type="p">
+    Choose which scores or results you want saved on each contact. For example, save the overall score, the winning category, or scores for each individual category.
+  </Step>
+  <Step title="Save your quiz" icon="check" title-type="p">
+    From now on, every person who completes the quiz will have their results stored on their contact profile automatically.
+  </Step>
+</Steps>
+
+## Submission settings
+
+Choose what happens when someone finishes the quiz. [Watch this step (6:12)](https://www.loom.com/share/5c9e167d3c8c458ca5d2057d68a40585?t=372)
+
+<Image
+  src="https://loom.com/i/72d40523501e4871b2ab2fce54e30686?workflows_screenshot=true"
+  alt="Submission settings showing result template, custom message, and redirect options"
+  width="800"
+  height="450"
+/>
+
+- **Show result template** — display the personalised result page you designed (most common)
+- **Show a message** — display a simple text message instead
+- **Redirect to a URL** — send them to a specific page (like a booking page for their recommended retreat)
+
+You can also add your Facebook Pixel ID so quiz completions are tracked for your advertising campaigns.
+
+## Sharing your quiz
+
+Click **Integrate** for your sharing options. [Watch this step (6:32)](https://www.loom.com/share/5c9e167d3c8c458ca5d2057d68a40585?t=392)
+
+<Image
+  src="https://loom.com/i/7d30a44084654053ba00e35adf1c1961?workflows_screenshot=true"
+  alt="Quiz integration options showing embed code and share link"
+  width="800"
+  height="450"
+/>
+
+Like surveys, you have two options:
+- **Embed code** — add it to your website (ask Korneel if you need help)
+- **Share link** — a direct URL to send via email, social media, or WhatsApp
+
+<Callout kind="tip">
+  Quizzes are incredibly shareable. Put the link in your Instagram bio ("Take the quiz!"), add it as a button on your homepage, or include it in your email signature. People love quizzes — they're fun and they generate high-quality leads because the person is already engaged with your content.
+</Callout>
+
+## Quiz ideas for wellness businesses
+
+| Quiz title | Categories | Goal |
+| --- | --- | --- |
+| "What type of retreat is right for you?" | Adventure, Relaxation, Spiritual, Detox | Match people to the right retreat |
+| "What's your Ayurvedic constitution?" | Vata, Pitta, Kapha | Educate and qualify leads |
+| "How stressed are you really?" | Low, Moderate, High | Identify people who need your services most |
+| "What's your wellness personality?" | Social Butterfly, Solo Explorer, Deep Diver | Personalise follow-up messaging |
+| "Are you ready for a life change?" | Ready Now, Getting Close, Just Exploring | Segment leads by urgency |
+
+## Quick reference
+
+| What you want to do | Where to find it |
+| --- | --- |
+| Create a new quiz | **Sites → Quizzes → Add Quiz** |
+| Set up scoring categories | **Manage Categories** (top left in builder) |
+| Assign scores to answers | Click question → **Settings** → category scores at bottom |
+| Design the result page | Scroll to bottom of quiz → edit result sections |
+| Store results on contacts | Result page **Settings** → select custom fields |
+| Set up colour-coded tiers | **Configure Score Tiers** (top right in builder) |
+| Share the quiz | **Integrate** → embed code or share link |
+| View who completed it | **Submissions** tab |
+
+## What to read next
+
+<Columns cols={2}>
+  <Card title="Creating Forms" icon="plus-circle" href="/growth-tools/forms-surveys/creating-a-form">
+    For simpler, single-page data collection.
+  </Card>
+  <Card title="Automations" icon="zap" href="/growth-tools/automations/understanding-workflows">
+    Set up automatic follow-ups based on quiz results.
+  </Card>
+</Columns>
+
+---
+
+> This feature is part of our **Growth Tools** package. Interested in adding it to your setup? Send Korneel a message on Slack and we'll walk through whether it's a good fit for your business.
+
+---
+
+> **Need help?** If you get stuck, send Korneel a message on Slack and we'll sort it out together.

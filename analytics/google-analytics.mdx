@@ -1,0 +1,187 @@
+---
+title: "Google Analytics"
+description: "How to access and navigate your Google Analytics 4 (GA4) dashboard, key reports to look at, and tips for getting useful insights."
+---
+
+# Google Analytics 4 (GA4)
+
+If you're on our Growth or Signature plan, we've set up Google Analytics 4 (GA4) alongside PostHog. GA4 gives you deeper insight into how visitors find and interact with your website, and it's essential if you're running Google Ads or want detailed marketing attribution data.
+
+The good news: we set everything up during your website build. You don't need to install anything or configure any settings.
+
+## How to Access Your GA4 Dashboard
+
+Getting into your analytics dashboard is simple.
+
+<Steps>
+<Step title="Go to analytics.google.com" icon="globe" title-type="p">
+Open your browser and visit [analytics.google.com](https://analytics.google.com). Bookmark this page so you can find it easily next time.
+</Step>
+
+<Step title="Sign in with your Google account" icon="log-in" title-type="p">
+Use the Google account we connected during setup. If you're not sure which account that is, check your email for an invitation from Google Analytics, or ask us on Slack.
+</Step>
+
+<Step title="Select your property" icon="layers" title-type="p">
+If you have multiple Google accounts or properties, make sure you select the one that matches your website name. You'll see it in the dropdown at the top left of the screen.
+</Step>
+
+<Step title="Start exploring" icon="bar-chart" title-type="p">
+You're in! The home screen gives you a quick overview. The real insights are in the reports section on the left sidebar.
+</Step>
+</Steps>
+
+<Callout kind="info">
+Can't find your GA4 access or didn't receive an invitation? Send us a message on Slack and we'll sort it out. We can re-send the invite or connect a different Google account.
+</Callout>
+
+## Key Reports to Look At
+
+GA4 has a lot of reports, and honestly, most of them you can ignore. Here are the ones that actually matter for your wellness business.
+
+### Realtime Report
+
+**What it shows:** Who's on your website right now, in real time.
+
+**When to use it:** This is fun to check right after you share a post on social media or send a newsletter. You can see the immediate impact. It's also useful for confirming that tracking is working correctly.
+
+**Where to find it:** Left sidebar -> Reports -> Realtime
+
+### Acquisition Report
+
+**What it shows:** How people find your website. This breaks down into channels like organic search (Google), social media, direct traffic, referrals from other websites, and paid advertising.
+
+**When to use it:** Check this monthly to understand which marketing channels are actually driving visitors. If you're putting effort into Instagram but most of your traffic comes from Google, that's an important insight.
+
+**Where to find it:** Left sidebar -> Reports -> Acquisition -> Traffic acquisition
+
+**Key things to look for:**
+- Which channel brings the most visitors?
+- Which channel has the best engagement (longest session time)?
+- Are paid campaigns actually driving traffic?
+- Is organic search growing over time?
+
+### Engagement Report
+
+**What it shows:** What people do once they're on your site. Which pages they visit, how long they stay, and what they interact with.
+
+**Where to find it:** Left sidebar -> Reports -> Engagement -> Pages and screens
+
+**Key things to look for:**
+- Which pages get the most views?
+- What's the average engagement time per page?
+- Which pages have the highest "exit" rate (where people leave)?
+
+<Callout kind="tip">
+Pay special attention to the engagement time on your key pages (like your services page or retreat page). If people spend less than 30 seconds there, the content might not be connecting with them.
+</Callout>
+
+### Conversions Report
+
+**What it shows:** How many visitors took a meaningful action on your website. We set up specific conversion events during your build, like form submissions, booking requests, or newsletter signups.
+
+**Where to find it:** Left sidebar -> Reports -> Engagement -> Conversions
+
+**Key things to look for:**
+- How many conversions happened this month?
+- Which conversion events fire most often?
+- What's the trend over time?
+
+For a deeper dive into conversions, check out our [Understanding Conversions](/analytics/understanding-conversions) guide.
+
+## Understanding Users, Sessions, and Page Views
+
+These three terms show up everywhere in GA4, and they mean different things.
+
+### Users
+
+A user is one individual person (well, technically one browser). If someone visits your site on Monday and again on Thursday, they count as one user. GA4 uses cookies to identify returning visitors.
+
+### Sessions
+
+A session is a single visit. That same person who came on Monday and Thursday counts as one user but two sessions. A session ends after 30 minutes of inactivity.
+
+### Page Views
+
+A page view is counted every time someone loads a page. If a visitor looks at your homepage, then your about page, then your retreat page, that's one session with three page views.
+
+**Here's how they relate:**
+- You'll always have more page views than sessions
+- You'll always have more sessions than users
+- A healthy site has more sessions per user (meaning people come back)
+
+| Metric | What It Counts | Example |
+|---|---|---|
+| Users | Individual people | 1 person visiting twice = 1 user |
+| Sessions | Individual visits | 1 person visiting twice = 2 sessions |
+| Page Views | Individual pages loaded | 1 visit with 3 pages = 3 page views |
+
+## GA4 vs. PostHog: Why the Numbers Differ
+
+If you compare your PostHog dashboard with GA4, you'll notice the numbers don't match. This is completely normal, and here's why.
+
+**Cookie consent:** GA4 requires a cookie consent banner (which we include on your site). Visitors who decline cookies won't appear in GA4 at all. PostHog doesn't use cookies, so it captures everyone.
+
+**Tracking method:** GA4 uses cookies to identify returning visitors. PostHog uses a cookieless approach. This means they count "unique visitors" differently.
+
+**Data processing:** GA4 samples data and applies machine learning to estimate numbers. PostHog counts raw events.
+
+<Callout kind="info">
+GA4 requires a cookie consent banner, which we set up for you. Visitors who decline cookies won't be tracked in GA4 but will still appear in PostHog. This means PostHog usually shows higher visitor numbers -- and that's perfectly fine. Think of PostHog as your complete picture and GA4 as your marketing-focused view.
+</Callout>
+
+**The bottom line:** Use PostHog for overall traffic trends and GA4 for marketing channel analysis and ad performance. They complement each other.
+
+## Setting Up Email Summaries
+
+One of the best features in GA4 is email summaries. Instead of remembering to check your dashboard, you can have a weekly or monthly summary sent straight to your inbox.
+
+<Steps>
+<Step title="Click the share button" icon="share-2" title-type="p">
+On any report page in GA4, look for the share icon (it looks like a paper airplane or share symbol) in the top right corner.
+</Step>
+
+<Step title="Choose email frequency" icon="calendar" title-type="p">
+Select how often you want to receive the summary: daily, weekly, or monthly. We recommend weekly for most wellness businesses.
+</Step>
+
+<Step title="Pick your report" icon="file-text" title-type="p">
+Choose which report you want summarized. The Traffic Acquisition report is a great starting point.
+</Step>
+
+<Step title="Confirm and save" icon="check" title-type="p">
+Enter your email address and confirm. You'll start receiving summaries on your chosen schedule.
+</Step>
+</Steps>
+
+<Callout kind="tip">
+Set up a weekly email summary so you don't have to remember to check your dashboard. A quick glance at a weekly summary keeps you informed without taking up much time. If you'd like help setting this up, just ask on Slack and we'll walk you through it.
+</Callout>
+
+## Common Questions
+
+**Do I need to do anything to maintain GA4?**
+No. Everything runs automatically once it's set up. We'll handle any updates or changes on our end.
+
+**Can I give my marketing consultant access?**
+Absolutely. We can add additional users to your GA4 property. Just share their email address with us on Slack.
+
+**What if I don't see any data?**
+If your dashboard looks empty, it might be that the date range is set incorrectly, or the property hasn't been linked yet. Check the date picker in the top right, and if that doesn't help, reach out to us.
+
+**Should I use GA4 or PostHog for my monthly check-in?**
+If you're on the Care Plan, we include the most relevant data from both in your monthly report. If you want to explore on your own, PostHog is simpler and GA4 gives more marketing detail.
+
+[VIDEO: Korneel shows how to navigate GA4 and find the reports that matter most]
+
+## Learn More
+
+<Columns cols="2">
+<Card title="Analytics Overview" href="/analytics/overview" icon="bar-chart" horizontal="false">
+  Understand our overall analytics approach and why we use the tools we use.
+</Card>
+
+<Card title="Understanding Conversions" href="/analytics/understanding-conversions" icon="target" horizontal="false">
+  What counts as a conversion, how to read conversion data, and tips to improve your numbers.
+</Card>
+</Columns>
