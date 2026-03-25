@@ -34,7 +34,13 @@
                 "icon": "globe"
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Your Website",
+        "icon": "globe",
+        "groups": [
           {
             "group": "Website Management",
             "icon": "edit",
@@ -75,32 +81,6 @@
                 "icon": "activity"
               }
             ]
-          },
-          {
-            "group": "Hosting & Care Plan",
-            "icon": "server",
-            "pages": [
-              {
-                "title": "Hosting Plan",
-                "path": "hosting-care-plan/hosting-plan",
-                "icon": "cloud"
-              },
-              {
-                "title": "Care Plan",
-                "path": "hosting-care-plan/care-plan",
-                "icon": "heart"
-              },
-              {
-                "title": "Monthly Reports",
-                "path": "hosting-care-plan/monthly-reports",
-                "icon": "bar-chart"
-              },
-              {
-                "title": "Requesting Changes",
-                "path": "hosting-care-plan/requesting-changes",
-                "icon": "message-circle"
-              }
-            ]
           }
         ]
       },
@@ -108,37 +88,6 @@
         "tab": "Growth Tools",
         "icon": "trending-up",
         "groups": [
-          {
-            "group": "Social Planner",
-            "icon": "share-2",
-            "pages": [
-              {
-                "title": "Social Planner Overview",
-                "path": "growth-tools/social-planner/overview",
-                "icon": "share-2"
-              },
-              {
-                "title": "Connecting Social Accounts",
-                "path": "growth-tools/social-planner/connecting-accounts",
-                "icon": "link"
-              },
-              {
-                "title": "Creating a Post",
-                "path": "growth-tools/social-planner/creating-a-post",
-                "icon": "plus-circle"
-              },
-              {
-                "title": "Using the Content Calendar",
-                "path": "growth-tools/social-planner/content-calendar",
-                "icon": "calendar"
-              },
-              {
-                "title": "Best Practices",
-                "path": "growth-tools/social-planner/best-practices",
-                "icon": "star"
-              }
-            ]
-          },
           {
             "group": "Forms & Surveys",
             "icon": "clipboard",
@@ -235,27 +184,6 @@
                 "title": "Tracking Leads",
                 "path": "growth-tools/pipeline-crm/tracking-leads",
                 "icon": "target"
-              }
-            ]
-          },
-          {
-            "group": "Reviews & Reputation",
-            "icon": "star",
-            "pages": [
-              {
-                "title": "Reviews Overview",
-                "path": "growth-tools/reviews/overview",
-                "icon": "star"
-              },
-              {
-                "title": "Setting Up Review Requests",
-                "path": "growth-tools/reviews/setting-up-requests",
-                "icon": "send"
-              },
-              {
-                "title": "Managing Reviews",
-                "path": "growth-tools/reviews/managing-reviews",
-                "icon": "message-circle"
               }
             ]
           },
@@ -359,6 +287,58 @@
             ]
           },
           {
+            "group": "Social Planner",
+            "icon": "share-2",
+            "pages": [
+              {
+                "title": "Social Planner Overview",
+                "path": "growth-tools/social-planner/overview",
+                "icon": "share-2"
+              },
+              {
+                "title": "Connecting Social Accounts",
+                "path": "growth-tools/social-planner/connecting-accounts",
+                "icon": "link"
+              },
+              {
+                "title": "Creating a Post",
+                "path": "growth-tools/social-planner/creating-a-post",
+                "icon": "plus-circle"
+              },
+              {
+                "title": "Using the Content Calendar",
+                "path": "growth-tools/social-planner/content-calendar",
+                "icon": "calendar"
+              },
+              {
+                "title": "Best Practices",
+                "path": "growth-tools/social-planner/best-practices",
+                "icon": "star"
+              }
+            ]
+          },
+          {
+            "group": "Reviews & Reputation",
+            "icon": "star",
+            "pages": [
+              {
+                "title": "Reviews Overview",
+                "path": "growth-tools/reviews/overview",
+                "icon": "star"
+              },
+              {
+                "title": "Setting Up Review Requests",
+                "path": "growth-tools/reviews/setting-up-requests",
+                "icon": "send"
+              },
+              {
+                "title": "Managing Reviews",
+                "path": "growth-tools/reviews/managing-reviews",
+                "icon": "message-circle"
+              }
+            ]
+          },
+          {
             "group": "AI Features",
             "icon": "cpu",
             "pages": [
@@ -376,44 +356,6 @@
                 "title": "Chatbot Conversations",
                 "path": "growth-tools/ai-features/conversations",
                 "icon": "message-circle"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Analytics & FAQ",
-        "icon": "bar-chart-2",
-        "groups": [
-          {
-            "group": "Analytics & Tracking",
-            "icon": "bar-chart",
-            "pages": [
-              {
-                "title": "Analytics Overview",
-                "path": "analytics/overview",
-                "icon": "bar-chart"
-              },
-              {
-                "title": "Google Analytics",
-                "path": "analytics/google-analytics",
-                "icon": "trending-up"
-              },
-              {
-                "title": "Understanding Conversions",
-                "path": "analytics/understanding-conversions",
-                "icon": "target"
-              }
-            ]
-          },
-          {
-            "group": "FAQ",
-            "icon": "help-circle",
-            "pages": [
-              {
-                "title": "Frequently Asked Questions",
-                "path": "faq",
-                "icon": "help-circle"
               }
             ]
           }
